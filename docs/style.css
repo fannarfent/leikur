@@ -2,7 +2,7 @@
 body {
 margin: 0px;
 overflow: hidden;
-
+z-index:1;
 }
 canvas {
 display: block;
@@ -10,5 +10,18 @@ background-color: #113;
 overflow: hidden;
 }
 p {
+    z-index:100;
     text-align:center;
+    font-size:10;
+}
+
+* {
+-webkit-touch-callout: none;
+-webkit-text-size-adjust: none; 
+
+-webkit-tap-highlight-color: rgba(0,0,0,0); 
+
+-webkit-user-select: none; 
+
+-webkit-tap-highlight-color: rgba(0,0,0,0); 
 }
