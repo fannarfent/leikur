@@ -1,0 +1,16 @@
+
+body {
+margin: 0px;
+overflow: hidden;
+z-index:1;
+}
+canvas {
+display: block;
+background-color: #113;
+overflow: hidden;
+}
+p {
+    z-index:100;
+    text-align:center;
+    font-size:x-large;
+}
