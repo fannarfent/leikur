@@ -371,7 +371,8 @@ ShipMoving = function(x,y) {
   };
   
   this.isdead = function () {
-    
+    // Vibration API virkar ekki á IOS þannig ég get ekki testað það :/ 
+    window.navigator.vibrate([200]);
     return !!this.dead.length;
   };
   
