@@ -14,7 +14,6 @@ Vector2.prototype = {
     return this;
 
   },
-
   toString : function (decPlaces) {
      decPlaces = decPlaces || 3; 
     var scalar = Math.pow(10,decPlaces); 
@@ -34,7 +33,6 @@ Vector2.prototype = {
     this.x = v.x;
     this.y = v.y;
   },  
-  
   magnitude : function () {
     return Math.sqrt((this.x*this.x)+(this.y*this.y));
   },
@@ -373,7 +371,7 @@ ShipMoving = function(x,y) {
   };
   
   this.isdead = function () {
-    window.navigator.vibrate([200]);
+    
     return !!this.dead.length;
   };
   
