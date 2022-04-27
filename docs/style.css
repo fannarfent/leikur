@@ -14,7 +14,12 @@ p {
     text-align:center;
     font-size:10;
 }
+h3{
+    z-index: 100;
+    text-align:right;
+    font-size:10;
 
+}
 * {
 -webkit-touch-callout: none;
 -webkit-text-size-adjust: none; 
@@ -23,5 +28,4 @@ p {
 
 -webkit-user-select: none; 
 
--webkit-tap-highlight-color: rgba(0,0,0,0); 
-}
+-webkit-tap
