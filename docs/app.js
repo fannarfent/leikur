@@ -1,4 +1,5 @@
 
+
 var Vector2 = function (x,y) {
   this.x= x || 0; 
   this.y = y || 0; 
@@ -245,7 +246,7 @@ Bullet.prototype = {
 };
 
 // static
-Bullet.speed = 5;
+Bullet.speed = 10;
 
 })();
 
@@ -297,7 +298,7 @@ Asteroid = function (x,y,radius)
   this.draw = function(ctx) {
     ctx.save(); 
     ctx.translate(this.pos.x, this.pos.y); 
-    ctx.strokeStyle = "#fff";
+    ctx.strokeStyle = "#8300ff";
     ctx.fillStyle = '#000';
     ctx.lineWidth = 2; 
     ctx.beginPath(); 
@@ -371,8 +372,7 @@ ShipMoving = function(x,y) {
   };
   
   this.isdead = function () {
-    // Vibration API virkar ekki á IOS þannig ég get ekki testað það :/ 
-    window.navigator.vibrate([200]);
+    
     return !!this.dead.length;
   };
   
@@ -397,7 +397,7 @@ ShipMoving = function(x,y) {
       }
     
       c.lineWidth = 2; 
-      c.strokeStyle = "#fff"; 
+      c.strokeStyle = "#ff0303"; 
     
       c.beginPath();
       c.moveTo(-10, -10);
